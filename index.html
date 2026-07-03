@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almokhtabar Results Website</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="topbar__inner">
+          <button class="hamburger" type="button" aria-label="Toggle menu">☰</button>
+          <nav class="topbar__links" aria-label="Main navigation">
+            <a href="https://almokhtabar.com/ar/">الرئيسية</a>
+            <a href="https://almokhtabar.com/ar/csr/">المسئولية_المجتمعية</a>
+            <a href="https://almokhtabar.com/ar/al-mokhatabr-more/">المختبر More</a>
+            <a href="https://almokhtabar.com/ar/about-us/">نبذة عنّا</a>
+            <a href="#" data-lang>English</a>
+          </nav>
+          <a class="brand" href="https://almokhtabar.com/en/">
+            <img src="public/images/mk_main_logo.png" alt="" />
+            <span>
+              <strong>al mokhtabar</strong>
+              <small>moamena labs</small>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <aside class="side-menu" aria-hidden="true">
+        <button class="side-menu__close" type="button" aria-label="Close menu">×</button>
+        <a href="https://almokhtabar.com/ar/">الرئيسية</a>
+        <a href="https://almokhtabar.com/ar/csr/">المسئولية_المجتمعية</a>
+        <a href="https://almokhtabar.com/ar/al-mokhatabr-more/">المختبر More</a>
+        <a href="https://almokhtabar.com/ar/about-us/">نبذة عنّا</a>
+        <a href="#" data-lang>English</a>
+      </aside>
+      <div class="menu-mask" hidden></div>
+
+      <main class="page-shell">
+        <section class="grid">
+          <div class="patient-column">
+            <article class="patient-card">
+              <div class="patient-copy">
+                <p><strong>اسم المريض :</strong><span>انتوني مايكل سمير</span></p>
+                <p><strong>رقم الزيارة:</strong><span>24825511301</span></p>
+                <p>
+                  <strong>تاريخ الزيارة:</strong><span>23-06-2025</span>
+                  <span class="dot"></span><span class="status">اكتملت</span>
+                </p>
+              </div>
+              <div class="patient-actions">
+                <button class="download" type="button">تحميل النتائج</button>
+                <button class="pay" type="button" disabled>الدفع</button>
+              </div>
+            </article>
+
+            <button
+              class="result-row"
+              type="button"
+              aria-expanded="false"
+              data-result="10.14"
+              data-unit="%"
+              data-age="7 Year"
+              data-gender="Male"
+              data-client-id="451"
+              data-registered="23-06-2026 17:35:08"
+              data-collected="23-06-2026 17:35:15"
+              data-authenticated="23-06-2026 21:24:25"
+              data-printed="03-07-2026 21:45:07"
+            >
+              <span>Haemoglobin A1C</span>
+              <span>اكتملت</span>
+            </button>
+            <div class="result-details" hidden>
+              <div><strong>Test:</strong> Haemoglobin A1C</div>
+              <div><strong>Result:</strong> 10.14 %</div>
+              <div><strong>Status:</strong> اكتملت</div>
+              <div><strong>Visit:</strong> 24825511301</div>
+            </div>
+          </div>
+
+          <section class="survey-card" aria-label="Visit survey">
+            <h1>ابدأ استطلاع الزيارة الخاص بك</h1>
+
+            <div class="survey-question" data-question="0">
+              <p>بناء على زيارتك الأخيرة لمعاملنا ، على مقياس من 0 الى 10، إلى أى مدى ستقوم بترشيحنا لأقاربك واصدقاءك؟ علما بأن 10 هى بالتأكيد نعم و 0 بالتأكيد لا</p>
+              <div class="rating-row" aria-label="question 1 rating"></div>
+              <div class="reason-panel">
+                <h2>- ما هو سبب عدم ترشيحكم؟</h2>
+                <label><span>طول فترة الانتظار</span><input type="checkbox" value="طول فترة الانتظار" /></label>
+                <label><span>المظهر العام للفرع غير مرضي</span><input type="checkbox" value="المظهر العام للفرع غير مرضي" /></label>
+                <label><span>عدم الإلتزام بإجراءات مكافحة العدوى</span><input type="checkbox" value="عدم الإلتزام بإجراءات مكافحة العدوى" /></label>
+                <label><span>إسلوب وأداء موظفى الإستقبال</span><input type="checkbox" value="إسلوب وأداء موظفى الإستقبال" /></label>
+              </div>
+            </div>
+
+            <div class="survey-question" data-question="1">
+              <p>ما مدي رضاك عن موظف الاستقبال الذي قام بخدمتكم علي المقياس من 0 الي 10 ؟ علما بأن 10 هى راضى جدا و 0 غير راضى تماما</p>
+              <div class="rating-row" aria-label="question 2 rating"></div>
+              <div class="reason-panel">
+                <h2>- ما هو سبب عدم رضاك؟</h2>
+                <label><span>إجراءات الحصول علي الموافقات الطبية</span><input type="checkbox" value="إجراءات الحصول علي الموافقات الطبية" /></label>
+                <label><span>اسلوب و مظهر موظف الإستقبال</span><input type="checkbox" value="اسلوب و مظهر موظف الإستقبال" /></label>
+                <label><span>عدم القدرة على الإجابة على استفساراتى</span><input type="checkbox" value="عدم القدرة على الإجابة على استفساراتى" /></label>
+                <label><span>عدم الاتزام بالتحاليل المطلوبه</span><input type="checkbox" value="عدم الاتزام بالتحاليل المطلوبه" /></label>
+              </div>
+            </div>
+
+            <div class="survey-question" data-question="2">
+              <p>ما مدي رضاك عن طبيب سحب العينة الذي قام بخدمتكم علي المقياس من 0 الي 10؟ علما بأن 10 هى راضى جدا و 0 غير راضى تماما</p>
+              <div class="rating-row" aria-label="question 3 rating"></div>
+              <div class="reason-panel">
+                <h2>- ما هو سبب عدم رضاك؟</h2>
+                <label><span>عدم القدرة علي سحب العينة بسهولة</span><input type="checkbox" value="عدم القدرة علي سحب العينة بسهولة" /></label>
+                <label><span>التحدث باسلوب غير لائق</span><input type="checkbox" value="التحدث باسلوب غير لائق" /></label>
+                <label><span>عدم الإلتزام بإجراءات مكافحة العدوي اثناء سحب العينات</span><input type="checkbox" value="عدم الإلتزام بإجراءات مكافحة العدوي اثناء سحب العينات" /></label>
+              </div>
+            </div>
+
+            <div class="survey-question survey-other">
+              <p>اخري</p>
+              <textarea placeholder="اكتب إجابتك هنا..."></textarea>
+            </div>
+
+            <button class="submit" type="button">تسجيل</button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </section>
+        </section>
+
+        <a class="logo-separator" href="#" aria-label="Brand banner">
+          <span></span>
+          <img src="public/images/mk_main_logo.png" alt="Brand Logo" />
+          <span></span>
+        </a>
+      </main>
+
+      <footer class="footer">
+        <img src="public/images/mk_footer_logo.png" alt="Al Mokhtabar" />
+        <span>All Rights Reserved to © Al Mokhtabar Labs 2026</span>
+      </footer>
+    </div>
+    <script src="src/pdf-template.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
